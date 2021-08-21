@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* For header */
+
+h1,h2,h3,h4,h5{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    background-color: #f907fc;
+background-image: linear-gradient(315deg, #f907fc 0%, #05d6d9 74%);
+    color:white;
+    position: fixed;
+    width: 100%;
+    position: fixed;
+    height: 80px;
+    padding: 20px;
+}
+
+header h3{
+  
+    color: white;
+    font-size: 2rem;
+    text-shadow: 2px 3px 2px black;
+    margin-top: -20px;
+    
+}
+header span{
+  
+    color: pink;
+    font-size: 1.8rem;
+    text-shadow: 2px 3px 2px black;
+    
+}
+
+/* Sidebar! */
+.sidebar h4{
+    color: white;
+    text-shadow: 2px 3px 2px black;
+}
+
+.sidebar{
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background-color: #f907fc;
+    background-image: linear-gradient(315deg, #f907fc 0%, #05d6d9 74%);
+    margin-top: 80px;
+    padding-top: 20px;
+    left: 0;
+    transition: all 0.3s;
+    
+}
+.img-fluid{
+    border-radius: 60%;
+    height: 100px;
+    width: 100px;
+
+}
+.sidebar a{
+    display: block;
+    line-height: 80px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    transition: all 0.3s;
+    transition-property: color;
+    padding-left: 15px;
+ 
+
+}
+.sidebar a:hover{
+  
+        text-decoration: none;
+        color: black;
+        background-color: #f807fc38;
+
+
+}
+.sidebar i{
+    padding-right: 10px;
+}
+
+ label #fafawews{
+    position: fixed;
+    z-index: 1;
+    transition: all ease-in-out 0.3s;
+    transition-property: color;
+    color:#f907fc;
+   left: 300px;
+
+
+}
+/*check ! */
+
+#check:checked ~ .sidebar
+{
+    left: -200px;
+    transition: all 0.3s;
+}
+
+
+/* Main content */
+
+#home {
+    margin-left: 250px;
+    background: url('covid.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+   
+  
+ 
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#prevent {
+    margin-left: 250px;
+    background: url('prevent.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+   
+  
+ 
+}
+#virus {
+    margin-left: 250px;
+    background: url('what.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+   
+  
+ 
+}
+#check{
+    display: none;
+}
+
+
